@@ -22,7 +22,7 @@ server.get("/user", (req, res) => {
   });
 });
 
-server.get("/class", (req, res) => {
+server.get("/classroom", (req, res) => {
   const room1 = [
     {
       name: "John Doe",
