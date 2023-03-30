@@ -22,6 +22,20 @@ server.get("/user", (req, res) => {
   });
 });
 
+server.get("/class", (req, res) => {
+  const room1 = [
+    {
+      name: "John Doe",
+      class: "1A",
+    },
+    {
+      name: "John Doe",
+      class: "2A",
+    },
+  ];
+  res.json(room1);
+});
+
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
